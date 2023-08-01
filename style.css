@@ -1,3 +1,4 @@
+html, 
 body {
     display: flex;
     flex-flow: column nowrap;
@@ -9,7 +10,8 @@ body {
 }
 
 .calculator,
-.power {
+.power,
+.clear {
     background-color: #797D80;
 }
 
@@ -34,8 +36,10 @@ body {
     width: 30px;
 }
 
-.power {
+.power, 
+.clear {
     font-size: 30px;
+    height: 100%;
     margin: 0;
 }
 
@@ -46,11 +50,11 @@ body {
     flex: 1 0 auto;
     width: 100%;
     background-color: black;
-    color: white;
 }
 
-.screen .text {
+.text {
     font-size: 64px;
+    color: black;
 }
 
 .buttons {
@@ -60,7 +64,8 @@ body {
 }
 
 .number,
-.operator {
+.operator,
+.equals {
     background-color: #B2B8BB;
     color: white;
     font-size: 48px;
@@ -88,6 +93,7 @@ body {
     width: 34%;
 }
 
-.operator {
+.operator,
+.equals {
     flex: auto;
 }
